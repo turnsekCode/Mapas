@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+.contenedor{
+  display: flex;
+  flex-wrap: wrap;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contenedor_mapa {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 500px;
+  width: 40%;
+  margin: 100px auto;
+  box-shadow: 0px -1px 5px 4px rgb(212 208 212 / 55%);
+}
+.contenedor_buscador {
+  height: 500px;
+  width: 40%;
+  margin: 100px auto;
+  box-shadow: 0px -1px 5px 4px rgb(212 208 212 / 55%);
+  padding: 10px;
+  background: #E7E7E7;
+}
+.mapa{
+  width: 100%;
+  height: 100%;
+}
+.market_img{
+  width: 40px;
+  cursor: pointer;
+}
+.titulo h3 strong{
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 36.5px;
+  color: #003071;
+}
+.titulo h3 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36.5px;
+  color: #003071;
+}
+.boton{
+  background: linear-gradient(180deg, #F8F201 0%, #FF9B00 100%);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  Padding: 10px 18px 10px 18px;
+  border: none;
+  width: 100%;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 20px;
+  color: #003071;
+  text-align: center;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.contenedor_info_tienda{
+  width: 100%;
+  height: 333px;
+  margin-top: 25px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
