@@ -7,6 +7,7 @@ import Map, {
 } from "react-map-gl";
 
 function Mapa() {
+  console.log(process.env.REACT_APP_KEY_MAPBOX);
   return (
     <div className="contenedor_mapa">
       <Map
@@ -17,7 +18,7 @@ function Mapa() {
         }}
         className="mapa"
         mapStyle="mapbox://styles/mapbox/streets-v9"
-        mapboxAccessToken="pk.eyJ1IjoicXVpY2tnb2wiLCJhIjoiY2xhbGNvcHAyMDRyNjNwbWthcm1zMm9nbyJ9.tmZYhqn4Z6U3fcCZH647Zw"
+        mapboxAccessToken={process.env.REACT_APP_KEY_MAPBOX}
       >
         <FullscreenControl /> <GeolocateControl /> <NavigationControl />
         <Marker longitude={-3.6590415} latitude={40.3931151}>

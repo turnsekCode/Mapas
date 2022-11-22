@@ -29,7 +29,7 @@ const markers = [
 
 function MapaGoogle() {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyCeHj8ULh9_3YSQQ7-ZaQOqMv_hoOjwvXU", // Add your API key
+    googleMapsApiKey: process.env.REACT_APP_KEY_GOOGLEMAP, // Add your API key
   });
   const [activeMarker, setActiveMarker] = useState(null);
 
